@@ -1,0 +1,42 @@
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editors and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Generated runtime artifacts
+build/
+dist/
+*.egg-info/
+
+# Keep assessment evidence, traces, outputs, and reports under version control.

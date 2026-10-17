@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "first_call_status": "ok",
+  "second_call_status": "ok",
+  "idempotency_cache_hit": true,
+  "elapsed_seconds": 0.053915,
+  "provider_call_counts": {
+    "order": 1,
+    "shipping": 1
+  },
+  "metrics": {
+    "started": 1,
+    "succeeded": 1,
+    "failed": 0,
+    "retries": 0,
+    "rate_limited": 0
+  }
+}

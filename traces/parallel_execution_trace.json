@@ -1,0 +1,69 @@
+{
+  "task": "parallel_tool_execution",
+  "first_response": {
+    "status": "ok",
+    "data": {
+      "order": {
+        "order_id": "ORD-EVIDENCE-001",
+        "customer_id": "CUS-EVIDENCE-001",
+        "status": "confirmed",
+        "total_amount": 1499.0
+      },
+      "shipping": {
+        "order_id": "ORD-EVIDENCE-001",
+        "shipping_status": "in_transit",
+        "tracking_number": "TRACK-ORD-EVIDENCE-001"
+      },
+      "execution_mode": "parallel"
+    },
+    "events": [
+      {
+        "event": "parallel.started",
+        "tool": "parallel_order_summary",
+        "subject": "evidence-agent"
+      },
+      {
+        "event": "parallel.completed"
+      }
+    ]
+  },
+  "second_response": {
+    "status": "ok",
+    "data": {
+      "order": {
+        "order_id": "ORD-EVIDENCE-001",
+        "customer_id": "CUS-EVIDENCE-001",
+        "status": "confirmed",
+        "total_amount": 1499.0
+      },
+      "shipping": {
+        "order_id": "ORD-EVIDENCE-001",
+        "shipping_status": "in_transit",
+        "tracking_number": "TRACK-ORD-EVIDENCE-001"
+      },
+      "execution_mode": "parallel"
+    },
+    "events": [
+      {
+        "event": "parallel.started",
+        "tool": "parallel_order_summary",
+        "subject": "evidence-agent"
+      },
+      {
+        "event": "idempotency.cache_hit"
+      }
+    ]
+  },
+  "elapsed_seconds": 0.053915,
+  "provider_call_counts": {
+    "order": 1,
+    "shipping": 1
+  },
+  "metrics": {
+    "started": 1,
+    "succeeded": 1,
+    "failed": 0,
+    "retries": 0,
+    "rate_limited": 0
+  }
+}
